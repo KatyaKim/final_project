@@ -17,6 +17,9 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import LiveSearch from "../LiveSearch/LiveSearch";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import AppleIcon from "@mui/icons-material/Apple";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -100,7 +103,10 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+
+      <NavLink to="/login">
+        <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      </NavLink>
     </Menu>
   );
 
@@ -159,7 +165,7 @@ export default function PrimarySearchAppBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar sx={{ backgroundColor: "#a7c5e9a8" }}>
           <IconButton
             size="large"
             edge="start"
@@ -175,28 +181,39 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            MUI
+            <AppleIcon />
           </Typography>
 
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
+          <LiveSearch />
 
-          <NavLink to="/">
-            <Button variant="contained">Home</Button>
-          </NavLink>
-          <NavLink to="/add">
-            <Button variant="contained">Add Product</Button>
-          </NavLink>
-          <NavLink to="/list">
-            <Button variant="contained">Products</Button>
-          </NavLink>
+          <div className="btn">
+            <NavLink to="/">
+              <Button
+                sx={{
+                  backgroundColor: "#2989ffa8",
+                  marginRight: "5px",
+                  textDecoration: "none",
+                }}
+                variant="contained"
+              >
+                Home
+              </Button>
+            </NavLink>
+            <NavLink to="/add">
+              <Button
+                sx={{ backgroundColor: "#2989ffa8", marginRight: "5px" }}
+                variant="contained"
+              >
+                Add Product
+              </Button>
+            </NavLink>
+            <NavLink to="/list">
+              <Button sx={{ backgroundColor: "#2989ffa8" }} variant="contained">
+                Products
+              </Button>
+            </NavLink>
+          </div>
+
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
@@ -208,6 +225,7 @@ export default function PrimarySearchAppBar() {
                 <MailIcon />
               </Badge>
             </IconButton>
+
             <IconButton
               size="large"
               aria-label="show 17 new notifications"
@@ -217,6 +235,19 @@ export default function PrimarySearchAppBar() {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
+
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <NavLink to={"/cart"}>
+                <Badge badgeContent={17} color="error">
+                  <ShoppingCartIcon />
+                </Badge>
+              </NavLink>
+            </IconButton>
+
             <IconButton
               size="large"
               edge="end"

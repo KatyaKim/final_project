@@ -9,7 +9,7 @@ const initObj = {
   title: "",
   type: "",
   description: "",
-  price: "",
+  price: 0,
   img1: "",
   img2: "",
   img3: "",
@@ -49,7 +49,7 @@ const AddProduct = (e) => {
       inpValues.title.trim() === "" ||
       inpValues.type.trim() === "" ||
       inpValues.description.trim() === "" ||
-      inpValues.price.trim() === "" ||
+      inpValues.price.toString().trim() === "" ||
       inpValues.img1.trim() === "" ||
       inpValues.img2.trim() === "" ||
       inpValues.img3.trim() === ""
@@ -101,6 +101,7 @@ const AddProduct = (e) => {
         <div>
           <TextField
             id="outlined-basic"
+            type="number"
             label="Цена"
             variant="outlined"
             value={inpValues.price}

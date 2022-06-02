@@ -81,6 +81,7 @@ const EditProduct = () => {
             name="price"
             onChange={(e) => setEditPrice(e.target.value)}
             className="inp4"
+            type="number"
           />
         </div>
         <div>

@@ -1,124 +1,114 @@
 {
   "products": [
     {
-      "title": "Какая-то хрень",
-      "type": "Ни о чем",
-      "description": "tyr",
-      "price": "rdyd",
-      "img1": "https://cdn3.photostockeditor.com/t/3009/snow-cold-winter-light-sky-sun-sunset-image.jpg",
-      "img2": "utfu",
-      "img3": "ydfy",
-      "id": 2
-    },
-    {
-      "title": "Еще одна Хрень",
-      "type": "vjhf",
-      "description": "tyr",
-      "price": "rdyd",
-      "img1": "https://thumbs.dreamstime.com/b/fond-de-coeur-d-amour-d-arc-en-ciel-60045149.jpg",
-      "img2": "utfu",
-      "img3": "ydfy",
-      "id": 4
-    },
-    {
-      "title": "",
-      "type": "ыфмыикыпицыкпи ф",
-      "description": "",
-      "price": "",
-      "img1": "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg",
-      "img2": "",
-      "img3": "",
-      "id": 5
-    },
-    {
-      "title": "катя",
-      "type": "",
-      "description": "",
-      "price": "",
-      "img1": "",
+      "title": "MacBook Pro 16\"",
+      "type": "Laptop",
+      "description": "10-CPU, 32-GPU, 32GB RAM",
+      "price": 2000.0,
+      "img1": "https://www.istore.kg/media/products/Pro-16-M1-SP-US-1_RGWcLBN.webp",
       "img2": "",
       "img3": "",
       "id": 6
     },
     {
-      "title": "ascsdvf",
-      "type": "ddv",
-      "description": "sxasx",
-      "price": "asx",
-      "img1": "xsac",
-      "img2": "cdc",
+      "title": "iPhone 13 Pro",
+      "type": "Phone",
+      "description": "Самая большая модернизация камер Pro",
+      "price": 1170.0,
+      "img1": "https://www.istore.kg/media/products/iphone-13-pro-blue-select.webp",
+      "img2": "",
+      "img3": "",
+      "id": 2
+    },
+    {
+      "title": "iPad Pro 12.9\" ",
+      "type": "Phone",
+      "description": "12,9-дюймовый дисплей Liquid Retina ",
+      "price": 1130.0,
+      "img1": "data:image/jpeg;base64,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",
+      "img2": "",
+      "img3": "",
+      "id": 4
+    },
+    {
+      "title": "MacBook Pro 14\"",
+      "type": "Laptop",
+      "description": "0-CPU, 16-GPU, 32GB RAM",
+      "price": 1900.0,
+      "img1": "https://www.istore.kg/media/products/Pro-14-M1-SP-US-1_ufBh9Xo.webp",
+      "img2": "",
       "img3": "",
       "id": 7
     },
     {
-      "title": "fvegrb",
-      "type": "efcacrevg",
-      "description": "cervrebv",
-      "price": "bbgtfgb",
-      "img1": "vvbfgb",
+      "title": "iPhone 13 Pro Max",
+      "type": "Phone",
+      "description": "A15 Bionic с 5-ядерным GPU",
+      "price": 1270.0,
+      "img1": "https://www.istore.kg/media/products/iphone-13-pro-max-green-select.webp",
       "img2": "",
       "img3": "",
       "id": 8
     },
     {
-      "title": "qwfwed",
-      "type": "fbb",
-      "description": "bfg",
-      "price": "dvdfv",
-      "img1": "",
+      "title": "Watch Series 7 ",
+      "type": "Accessories",
+      "description": "Nike with Aluminum Case",
+      "price": 440.0,
+      "img1": "https://www.istore.kg/media/products/7-41-Nike-Starlight-GPS.webp",
       "img2": "",
       "img3": "",
       "id": 9
     },
     {
-      "title": "sdvdfv",
-      "type": "cdcccdec",
-      "description": "cvacrvg",
-      "price": "vgbhnh",
-      "img1": "gbnhgbd f",
+      "title": "AirPods Pro",
+      "type": "Accessories",
+      "description": "Активное шумоподавление ",
+      "price": 225,
+      "img1": "https://www.istore.kg/media/products/AirPods-Pro-1.webp",
       "img2": "",
       "img3": "",
       "id": 10
     },
     {
-      "title": "gvfvfsdv e",
-      "type": "cwecwd wed",
-      "description": "eqrvbgrtbhteyn",
-      "price": "cweCWdverv",
-      "img1": "cawevabagb",
+      "title": "Watch Series 7 ",
+      "type": "Accessories",
+      "description": "With Stainless Steel Case",
+      "price": 900,
+      "img1": "https://www.istore.kg/media/products/stainless-graphite-41.webp",
       "img2": "",
       "img3": "",
       "id": 11
     },
     {
-      "title": "dfvdfvsbndghngdh",
-      "type": "",
-      "description": "",
-      "price": "",
-      "img1": "",
+      "title": "iPhone 13 Pro Max",
+      "type": "Phone",
+      "description": "A15 Bionic с 5-ядерным GPU",
+      "price": 1270,
+      "img1": "https://www.istore.kg/media/products/iphone-13-pro-max-green-select.webp",
       "img2": "",
       "img3": "",
-      "id": 12
+      "id": 17
     },
     {
-      "title": "vffvfsnfgm",
-      "type": "",
-      "description": "",
-      "price": "",
-      "img1": "",
+      "title": "Watch SE",
+      "type": "Accessories",
+      "description": "With Aluminum Case",
+      "price": 310,
+      "img1": "https://www.istore.kg/media/products/MKU83_VW_34FRwatch-40-alum-spacegray-nc-se_VW_34FR_WF_CO.webp",
       "img2": "",
       "img3": "",
-      "id": 13
+      "id": 18
     },
     {
-      "title": "vcefv fvfd",
-      "type": "cdcefvvvvvvvvv",
+      "title": "iPhone 13 mini",
+      "type": "Phone",
       "description": "",
-      "price": "",
-      "img1": "",
+      "price": 1200.0,
+      "img1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOFGY0ERZy95FNLw_xuSoXHGGOof50AnHLf_URgeOAQItoPAZ0xM0nN4SDlTEh_fwXsDQ&usqp=CAU",
       "img2": "",
       "img3": "",
-      "id": 14
+      "id": 19
     },
     {
       "title": "vewvr efcae",
@@ -126,7 +116,7 @@
       "description": "",
       "price": "",
       "img1": "",
-      "img2": "",
+      "img2": 500,
       "img3": "",
       "id": 15
     },
@@ -136,9 +126,29 @@
       "description": "",
       "price": "",
       "img1": "",
-      "img2": "",
+      "img2": 300,
       "img3": "",
       "id": 16
+    },
+    {
+      "title": "MacBook Pro 14\"",
+      "type": "Laptop",
+      "description": "0-CPU, 16-GPU, 32GB RAM",
+      "price": 2000,
+      "img1": "https://www.istore.kg/media/products/Pro-14-M1-SP-US-1_ufBh9Xo.webp",
+      "img2": "",
+      "img3": "",
+      "id": 178
+    },
+    {
+      "title": "test",
+      "type": "1234",
+      "description": "hgfhg",
+      "price": 800,
+      "img1": "ng",
+      "img2": "hjgh",
+      "img3": "jhjk",
+      "id": 20
     }
   ]
 }

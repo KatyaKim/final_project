@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { createContext, useReducer } from "react";
+import { useLocation } from "react-router-dom";
 
 export const productContext = createContext();
 
@@ -24,12 +25,15 @@ const reduser = (state = INIT_STATE, action) => {
 const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reduser, INIT_STATE);
 
+  const location = useLocation();
+  //   Хук useLocation возвращает объект location, представляющий текущий URL. Его можно рассматривать как useState, который возвращает новое местоположение при каждом изменении URL. Этот хук можно использовать, например, чтобы вызвать событие просмотра новой страницы для инструмента веб-аналитики.
+
   const addProduct = async (newProduct) => {
     await axios.post(API, newProduct);
   };
 
   const getProducts = async () => {
-    let { data } = await axios.get(API);
+    let { data } = await axios.get(`${API}${location.search}`);
     dispatch({
       type: "GET_PRODUCTS",
       payload: data,

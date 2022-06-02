@@ -1,20 +1,24 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import MainRoutes from "./MainRoutes";
-// import Carousel from "./Components/Carousel/Carousel";
+
 import PrimarySearchAppBar from "./Components/Navbar/Navbar";
 import ProductContextProvider from "./Context/ProductContext";
 import AuthContextProvider from "./Context/AuthContext";
+import CartContextProvider from "./Context/CartContext";
+import { Carousel } from "bootstrap";
 
 const App = () => {
   return (
     <BrowserRouter>
       <AuthContextProvider>
-        <ProductContextProvider>
-          <PrimarySearchAppBar />
-          <MainRoutes />
-          {/* <Carousel /> */}
-        </ProductContextProvider>
+        <CartContextProvider>
+          <ProductContextProvider>
+            <PrimarySearchAppBar />
+            {/* <Carousel /> */}
+            <MainRoutes />
+          </ProductContextProvider>
+        </CartContextProvider>
       </AuthContextProvider>
     </BrowserRouter>
   );
